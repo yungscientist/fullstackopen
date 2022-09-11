@@ -1,0 +1,45 @@
+POST http://localhost:3003/api/blogs HTTP/1.1
+content-type: application/json
+
+{
+    "title": "325235",
+    "author": "Vladimir Putin",
+    "url": "http://kremlin.ru",
+    "likes": 1,
+    "userId": "62ad84d5e7c4f9484fa938b5",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1ZG8yMjIzIiwiaWQiOiI2MzFkYzA2OTcyMzM3NWZjMjM1OWI0MTUiLCJpYXQiOjE2NjI4OTQzOTV9.m-9mlxrW0vo3k4v-dHuf7tzImkXw6Vzda0PurcLLHaY"
+    }
+
+
+###
+DELETE http://localhost:3003/api/blogs/629f387b5ab7160da776b76c
+
+###
+PUT http://localhost:3003/api/blogs/629f3fa64f39391641549186
+content-type: application/json
+
+{
+    "likes": 100
+}
+###
+GET http://localhost:3003/api/blogs/
+###
+POST http://localhost:3003/api/users HTTP/1.1
+content-type: application/json
+
+{
+      "name": "Vladimir Putin22222",
+      "username": "sudo2223",
+      "password": "zov19922"
+}
+
+###
+GET http://localhost:3003/api/users HTTP/1.1
+###
+POST http://localhost:3003/api/login HTTP/1.1
+content-type: application/json
+
+{
+      "username": "12312412",
+      "password": "123213213"
+}
